@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Queimadas no Brasil | Projeto G1</title>
+<style>
+  :root{--bg:#fff8f3;--ink:#2b1d16;--accent:#d9531e;--card:#fff;--muted:#7a6558}
+  @media (prefers-color-scheme:dark){:root{--bg:#1c1511;--ink:#f6ebe3;--accent:#ff7a3d;--card:#2a201a;--muted:#b9a79b}}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  header{background:linear-gradient(135deg,#b3360b,#f08a24);color:#fff;padding:64px 20px;text-align:center}
+  header h1{margin:0 0 8px;font-size:clamp(1.8rem,5vw,3rem)}
+  header p{margin:0 auto;max-width:720px;opacity:.95}
+  .btns{margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btns a{background:#fff;color:#b3360b;padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:600}
+  main{max-width:1000px;margin:0 auto;padding:32px 20px}
+  h2{color:var(--accent);margin-top:48px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+  .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+  .kpi{font-size:1.9rem;font-weight:700;color:var(--accent)}
+  .muted{color:var(--muted);font-size:.9rem}
+  figure{margin:20px 0;background:var(--card);padding:14px;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+  figure img{width:100%;height:auto;border-radius:8px}
+  figcaption{margin-top:8px;color:var(--muted);font-size:.9rem}
+  .tags span{display:inline-block;background:var(--card);border:1px solid var(--accent);color:var(--accent);padding:4px 12px;border-radius:999px;margin:4px 4px 0 0;font-size:.85rem}
+  footer{text-align:center;padding:32px 20px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1>🔥 Queimadas no Brasil (2015–2024)</h1>
+  <p>Análise e visualização de dados com Python: onde, quando e sob quais condições climáticas os focos de queimada aumentam.</p>
+  <div class="btns">
+    <a href="LINK_DO_DASHBOARD_STREAMLIT">📊 Abrir dashboard</a>
+    <a href="LINK_DO_REPOSITORIO_GITHUB">💻 Código no GitHub</a>
+  </div>
+</header>
+<main>
+  <h2>O problema</h2>
+  <p>Queimadas afetam biodiversidade, saúde e economia. O projeto investiga em uma base simulada de 20 UFs, entre 2015 e 2024, quais regiões, biomas e épocas concentram mais focos e quais variáveis (temperatura, chuva, seca, qualidade do ar) estão associadas a eles.</p>
+
+  <h2>Indicadores principais</h2>
+  <div class="grid">
+    <div class="card"><div class="kpi">61.803</div><div class="muted">focos de queimada no período</div></div>
+    <div class="card"><div class="kpi">+30%</div><div class="muted">crescimento de focos 2015 → 2024</div></div>
+    <div class="card"><div class="kpi">2×</div><div class="muted">focos médios de jul–out vs. demais meses</div></div>
+    <div class="card"><div class="kpi">0,81</div><div class="muted">correlação seca × focos</div></div>
+  </div>
+
+  <h2>Resultados</h2>
+  <figure><img src="imagens/02_focos_por_ano.png" alt="Focos por ano"><figcaption>Os focos crescem ao longo da década, com salto a partir de 2020.</figcaption></figure>
+  <figure><img src="imagens/03_sazonalidade.png" alt="Sazonalidade"><figcaption>Pico entre julho e outubro, o período seco.</figcaption></figure>
+  <figure><img src="imagens/04_regioes_ufs_biomas.png" alt="Regiões, UFs e biomas"><figcaption>A distribuição por UF é equilibrada; o Nordeste lidera o total por ter mais UFs na amostra.</figcaption></figure>
+  <figure><img src="imagens/06_correlacao.png" alt="Matriz de correlação"><figcaption>A seca é o fator mais associado aos focos; a chuva tem correlação negativa.</figcaption></figure>
+  <figure><img src="imagens/08_mapa_calor.png" alt="Mapa de calor mês × ano"><figcaption>Intensidade de focos por ano e mês.</figcaption></figure>
+
+  <h2>Conclusão</h2>
+  <p>Os focos crescem, concentram-se no período seco e estão mais ligados à seca e à pouca chuva do que à temperatura. Prevenção e brigadas devem ser reforçadas de julho a outubro, e o índice de seca é um bom indicador antecipado de risco.</p>
+  <p class="muted"><strong>Limitações:</strong> base simulada; o bioma não corresponde ao real de cada UF; nível de risco e qualidade do ar derivam do número de focos.</p>
+
+  <h2>Tecnologias</h2>
+  <div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Streamlit</span><span>Plotly</span><span>SQLAlchemy + SQLite</span><span>GitHub</span></div>
+</main>
+<footer>Projeto G1 · Análise e Visualização de Dados com Python · SEU NOME</footer>
+</body>
+</html>
