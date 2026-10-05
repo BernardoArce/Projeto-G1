@@ -1,10 +1,18 @@
 # 🔥 Queimadas no Brasil (2015–2024) — Análise e Dashboard
 
-Projeto da **Avaliação G1** — Linguagem de Programação: Análise e Visualização de Dados com Python.
+Projeto da **Avaliação G1** — Linguagem de Programação
 
-* 🔗 Repositório: *colar link do GitHub*
-* 🌐 Página do projeto: *colar link do GitHub Pages*
-* 📊 Dashboard: *colar link do Streamlit Community Cloud*
+Professor: Alexandre Neves Louzada
+
+Aluno: *Bernardo Teixeira de Oliveira Arce*
+
+
+
+* Repositório: https://github.com/BernardoArce/Projeto-G1
+* Página do projeto: *https://bernardoarce.github.io/Projeto-G1/*
+* Dashboard: *https://projeto-g1-gqgrshgdnhwmygbgzdfsfk.streamlit.app/*
+
+
 
 ## Problema
 
@@ -33,7 +41,7 @@ projeto-g1/
 ├── index.html          # página do projeto (GitHub Pages)
 ├── dados/              # queimadas.csv
 ├── database/           # queimadas.db (criado automaticamente pelo app)
-├── notebooks/          # analise\_queimadas.ipynb
+├── notebooks/          # analise\\\\\\\_queimadas.ipynb
 └── imagens/            # gráficos usados no notebook e na página
 ```
 
@@ -44,7 +52,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Notebook: abra `notebooks/analise\_queimadas.ipynb` no Jupyter/VS Code/Colab e execute todas as células.
+Notebook: abra `notebooks/analise\\\\\\\_queimadas.ipynb` no Jupyter/VS Google/Colab e execute todas as células.
 
 ## Principais resultados
 
@@ -54,9 +62,5 @@ Notebook: abra `notebooks/analise\_queimadas.ipynb` no Jupyter/VS Code/Colab e e
 
 ## Limitações
 
-Base simulada: o bioma não corresponde ao bioma real da UF, e `nivel\_risco` e `qualidade\_ar` são derivados do número de focos.
-
-## Autor
-
-*Bernardo Teixeira de Oliveira Arce* — Linguagem de programação
+Base simulada: o bioma não corresponde ao bioma real da UF, e `nivel\\\\\\\_risco` e `qualidade\\\\\\\_ar` são derivados do número de focos.
 

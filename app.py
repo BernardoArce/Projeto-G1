@@ -11,6 +11,14 @@ import streamlit as st
 from sqlalchemy import Column, Float, Integer, String, create_engine
 from sqlalchemy.orm import declarative_base
 
+"""Projeto da Avaliação G1 — Linguagem de Programação
+Professor: Alexandre Neves Louzada
+Aluno: Bernardo Teixeira de Oliveira Arce
+
+Repositório: https://github.com/BernardoArce/Projeto-G1
+Página do projeto: https://bernardoarce.github.io/Projeto-G1/
+"""
+
 warnings.filterwarnings("ignore", category=FutureWarning)
 BASE = Path(__file__).parent
 CSV_PATH = BASE / "dados" / "queimadas.csv"
